@@ -1,23 +1,23 @@
 #!name=One Exit
-#!desc=Claude、Google、Persona 走备注为 SG_Residential 的住宅节点
+#!desc=Claude、Google、Persona 走备注为 Taiwan A1 ISP 的住宅节点
 
 [Rule]
-DOMAIN-SUFFIX,claude.ai,SG_Residential
-DOMAIN-SUFFIX,claude.com,SG_Residential
-DOMAIN-SUFFIX,clau.de,SG_Residential
-DOMAIN-SUFFIX,anthropic.com,SG_Residential
-DOMAIN-SUFFIX,claudeusercontent.com,SG_Residential
-DOMAIN-SUFFIX,modelcontextprotocol.io,SG_Residential
-IP-CIDR,160.79.104.0/21,SG_Residential,no-resolve
-IP-CIDR6,2607:6bc0::/48,SG_Residential,no-resolve
+DOMAIN-SUFFIX,claude.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,claude.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,clau.de,Taiwan A1 ISP
+DOMAIN-SUFFIX,anthropic.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,claudeusercontent.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,modelcontextprotocol.io,Taiwan A1 ISP
+IP-CIDR,160.79.104.0/21,Taiwan A1 ISP,no-resolve
+IP-CIDR6,2607:6bc0::/48,Taiwan A1 ISP,no-resolve
 
-DOMAIN-SUFFIX,google.com,SG_Residential
-DOMAIN-SUFFIX,googleapis.com,SG_Residential
-DOMAIN-SUFFIX,gstatic.com,SG_Residential
-DOMAIN-SUFFIX,gmail.com,SG_Residential
-DOMAIN-SUFFIX,googleusercontent.com,SG_Residential
-DOMAIN-SUFFIX,recaptcha.net,SG_Residential
+DOMAIN-SUFFIX,google.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,googleapis.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,gstatic.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,gmail.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,googleusercontent.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,recaptcha.net,Taiwan A1 ISP
 
-DOMAIN-SUFFIX,withpersona.com,SG_Residential
+DOMAIN-SUFFIX,withpersona.com,Taiwan A1 ISP
 
-DOMAIN-SUFFIX,webshare.io,SG_Residential
+DOMAIN-SUFFIX,webshare.io,Taiwan A1 ISP
