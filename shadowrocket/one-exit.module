@@ -1,7 +1,7 @@
-#!name=One Exit
-#!desc=Claude、Google、Persona 走备注为 Taiwan A1 ISP 的住宅节点
-
+#!name=AI Exit - Taiwan A1 ISP
+#!desc=常用海外 AI、验证服务与出口检测走 Taiwan A1 ISP；节点备注必须完全一致。
 [Rule]
+# Claude / Anthropic
 DOMAIN-SUFFIX,claude.ai,Taiwan A1 ISP
 DOMAIN-SUFFIX,claude.com,Taiwan A1 ISP
 DOMAIN-SUFFIX,clau.de,Taiwan A1 ISP
@@ -10,14 +10,99 @@ DOMAIN-SUFFIX,claudeusercontent.com,Taiwan A1 ISP
 DOMAIN-SUFFIX,modelcontextprotocol.io,Taiwan A1 ISP
 IP-CIDR,160.79.104.0/21,Taiwan A1 ISP,no-resolve
 IP-CIDR6,2607:6bc0::/48,Taiwan A1 ISP,no-resolve
-
+# OpenAI / ChatGPT / Codex
+DOMAIN-SUFFIX,openai.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,chatgpt.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,oaistatic.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,oaiusercontent.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,oaistatsig.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,openaimerge.com,Taiwan A1 ISP
+# Google / Gemini / AI Studio；google.com 等规则也会覆盖非 AI 的 Google 服务。
 DOMAIN-SUFFIX,google.com,Taiwan A1 ISP
 DOMAIN-SUFFIX,googleapis.com,Taiwan A1 ISP
 DOMAIN-SUFFIX,gstatic.com,Taiwan A1 ISP
 DOMAIN-SUFFIX,gmail.com,Taiwan A1 ISP
 DOMAIN-SUFFIX,googleusercontent.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,google.dev,Taiwan A1 ISP
 DOMAIN-SUFFIX,recaptcha.net,Taiwan A1 ISP
-
+# Grok / Perplexity / Poe / Meta AI / Character AI
+DOMAIN-SUFFIX,grok.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,x.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,grokusercontent.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,perplexity.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,poe.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,meta.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,character.ai,Taiwan A1 ISP
+# Microsoft Copilot：身份验证主机是共享服务，会影响其他微软账号登录。
+DOMAIN,copilot.microsoft.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,copilot.cloud.microsoft,Taiwan A1 ISP
+DOMAIN,login.microsoftonline.com,Taiwan A1 ISP
+# GitHub Copilot：github.com 同时承载普通 GitHub 登录与浏览。
+DOMAIN-SUFFIX,githubcopilot.com,Taiwan A1 ISP
+DOMAIN,copilot-proxy.githubusercontent.com,Taiwan A1 ISP
+DOMAIN,origin-tracker.githubusercontent.com,Taiwan A1 ISP
+DOMAIN,github.com,Taiwan A1 ISP
+DOMAIN,api.github.com,Taiwan A1 ISP
+DOMAIN,github.githubassets.com,Taiwan A1 ISP
+# 其他 AI 聊天、模型平台及开发工具
+DOMAIN-SUFFIX,mistral.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,cohere.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,cohere.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,huggingface.co,Taiwan A1 ISP
+DOMAIN-SUFFIX,openrouter.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,together.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,replicate.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,fal.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,cursor.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,cursor.sh,Taiwan A1 ISP
+DOMAIN-SUFFIX,cursorapi.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,cursor-cdn.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,codeium.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,windsurf.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,devin.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,replit.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,bolt.new,Taiwan A1 ISP
+DOMAIN-SUFFIX,lovable.dev,Taiwan A1 ISP
+DOMAIN-SUFFIX,v0.dev,Taiwan A1 ISP
+# 图像 / 视频 / 音频 AI
+DOMAIN-SUFFIX,midjourney.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,runwayml.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,suno.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,elevenlabs.io,Taiwan A1 ISP
+DOMAIN-SUFFIX,ideogram.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,leonardo.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,krea.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,stability.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,dreamstudio.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,luma.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,pika.art,Taiwan A1 ISP
+DOMAIN-SUFFIX,heygen.com,Taiwan A1 ISP
+# 共享验证 / 身份核验。它们也服务于非 AI 网站。
 DOMAIN-SUFFIX,withpersona.com,Taiwan A1 ISP
-
+DOMAIN-SUFFIX,arkoselabs.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,hcaptcha.com,Taiwan A1 ISP
+DOMAIN,challenges.cloudflare.com,Taiwan A1 ISP
+DOMAIN,cdn.workos.com,Taiwan A1 ISP
+DOMAIN,forwarder.workos.com,Taiwan A1 ISP
+DOMAIN,frontend-apps-multi-region.workos.com,Taiwan A1 ISP
+DOMAIN,setup.workos.com,Taiwan A1 ISP
+DOMAIN,images.workoscdn.com,Taiwan A1 ISP
+DOMAIN,workos.imgix.net,Taiwan A1 ISP
+DOMAIN,js.stripe.com,Taiwan A1 ISP
+# 出口 IP / DNS / WebRTC / 风险检测。这里只控制访问检测站的路由。
 DOMAIN-SUFFIX,webshare.io,Taiwan A1 ISP
+DOMAIN-SUFFIX,net.coffee,Taiwan A1 ISP
+DOMAIN-SUFFIX,ipinfo.io,Taiwan A1 ISP
+DOMAIN-SUFFIX,ipapi.co,Taiwan A1 ISP
+DOMAIN-SUFFIX,ipify.org,Taiwan A1 ISP
+DOMAIN-SUFFIX,ifconfig.me,Taiwan A1 ISP
+DOMAIN-SUFFIX,icanhazip.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,ipleak.net,Taiwan A1 ISP
+DOMAIN-SUFFIX,dnsleaktest.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,browserleaks.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,iphey.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,pixelscan.net,Taiwan A1 ISP
+DOMAIN-SUFFIX,scamalytics.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,ipqualityscore.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,test-ipv6.com,Taiwan A1 ISP
+DOMAIN,www.cloudflare.com,Taiwan A1 ISP
