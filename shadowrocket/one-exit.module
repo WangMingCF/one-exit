@@ -1,108 +1,108 @@
-#!name=AI Exit - Taiwan A1 ISP
-#!desc=常用海外 AI、验证服务与出口检测走 Taiwan A1 ISP；节点备注必须完全一致。
+#!name=AI Exit - 固定家宽
+#!desc=常用海外 AI、验证服务与出口检测走 固定家宽；节点备注必须完全一致。
 [Rule]
 # Claude / Anthropic
-DOMAIN-SUFFIX,claude.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,claude.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,clau.de,Taiwan A1 ISP
-DOMAIN-SUFFIX,anthropic.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,claudeusercontent.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,modelcontextprotocol.io,Taiwan A1 ISP
-IP-CIDR,160.79.104.0/21,Taiwan A1 ISP,no-resolve
-IP-CIDR6,2607:6bc0::/48,Taiwan A1 ISP,no-resolve
+DOMAIN-SUFFIX,claude.ai,固定家宽
+DOMAIN-SUFFIX,claude.com,固定家宽
+DOMAIN-SUFFIX,clau.de,固定家宽
+DOMAIN-SUFFIX,anthropic.com,固定家宽
+DOMAIN-SUFFIX,claudeusercontent.com,固定家宽
+DOMAIN-SUFFIX,modelcontextprotocol.io,固定家宽
+IP-CIDR,160.79.104.0/21,固定家宽,no-resolve
+IP-CIDR6,2607:6bc0::/48,固定家宽,no-resolve
 # OpenAI / ChatGPT / Codex
-DOMAIN-SUFFIX,openai.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,chatgpt.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,oaistatic.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,oaiusercontent.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,oaistatsig.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,openaimerge.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,openai.com,固定家宽
+DOMAIN-SUFFIX,chatgpt.com,固定家宽
+DOMAIN-SUFFIX,oaistatic.com,固定家宽
+DOMAIN-SUFFIX,oaiusercontent.com,固定家宽
+DOMAIN-SUFFIX,oaistatsig.com,固定家宽
+DOMAIN-SUFFIX,openaimerge.com,固定家宽
 # Google / Gemini / AI Studio；google.com 等规则也会覆盖非 AI 的 Google 服务。
-DOMAIN-SUFFIX,google.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,googleapis.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,gstatic.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,gmail.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,googleusercontent.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,google.dev,Taiwan A1 ISP
-DOMAIN-SUFFIX,recaptcha.net,Taiwan A1 ISP
+DOMAIN-SUFFIX,google.com,固定家宽
+DOMAIN-SUFFIX,googleapis.com,固定家宽
+DOMAIN-SUFFIX,gstatic.com,固定家宽
+DOMAIN-SUFFIX,gmail.com,固定家宽
+DOMAIN-SUFFIX,googleusercontent.com,固定家宽
+DOMAIN-SUFFIX,google.dev,固定家宽
+DOMAIN-SUFFIX,recaptcha.net,固定家宽
 # Grok / Perplexity / Poe / Meta AI / Character AI
-DOMAIN-SUFFIX,grok.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,x.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,grokusercontent.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,perplexity.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,poe.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,meta.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,character.ai,Taiwan A1 ISP
+DOMAIN-SUFFIX,grok.com,固定家宽
+DOMAIN-SUFFIX,x.ai,固定家宽
+DOMAIN-SUFFIX,grokusercontent.com,固定家宽
+DOMAIN-SUFFIX,perplexity.ai,固定家宽
+DOMAIN-SUFFIX,poe.com,固定家宽
+DOMAIN-SUFFIX,meta.ai,固定家宽
+DOMAIN-SUFFIX,character.ai,固定家宽
 # Microsoft Copilot：身份验证主机是共享服务，会影响其他微软账号登录。
-DOMAIN,copilot.microsoft.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,copilot.cloud.microsoft,Taiwan A1 ISP
-DOMAIN,login.microsoftonline.com,Taiwan A1 ISP
+DOMAIN,copilot.microsoft.com,固定家宽
+DOMAIN-SUFFIX,copilot.cloud.microsoft,固定家宽
+DOMAIN,login.microsoftonline.com,固定家宽
 # GitHub Copilot：github.com 同时承载普通 GitHub 登录与浏览。
-DOMAIN-SUFFIX,githubcopilot.com,Taiwan A1 ISP
-DOMAIN,copilot-proxy.githubusercontent.com,Taiwan A1 ISP
-DOMAIN,origin-tracker.githubusercontent.com,Taiwan A1 ISP
-DOMAIN,github.com,Taiwan A1 ISP
-DOMAIN,api.github.com,Taiwan A1 ISP
-DOMAIN,github.githubassets.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,githubcopilot.com,固定家宽
+DOMAIN,copilot-proxy.githubusercontent.com,固定家宽
+DOMAIN,origin-tracker.githubusercontent.com,固定家宽
+DOMAIN,github.com,固定家宽
+DOMAIN,api.github.com,固定家宽
+DOMAIN,github.githubassets.com,固定家宽
 # 其他 AI 聊天、模型平台及开发工具
-DOMAIN-SUFFIX,mistral.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,cohere.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,cohere.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,huggingface.co,Taiwan A1 ISP
-DOMAIN-SUFFIX,openrouter.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,together.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,replicate.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,fal.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,cursor.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,cursor.sh,Taiwan A1 ISP
-DOMAIN-SUFFIX,cursorapi.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,cursor-cdn.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,codeium.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,windsurf.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,devin.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,replit.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,bolt.new,Taiwan A1 ISP
-DOMAIN-SUFFIX,lovable.dev,Taiwan A1 ISP
-DOMAIN-SUFFIX,v0.dev,Taiwan A1 ISP
+DOMAIN-SUFFIX,mistral.ai,固定家宽
+DOMAIN-SUFFIX,cohere.com,固定家宽
+DOMAIN-SUFFIX,cohere.ai,固定家宽
+DOMAIN-SUFFIX,huggingface.co,固定家宽
+DOMAIN-SUFFIX,openrouter.ai,固定家宽
+DOMAIN-SUFFIX,together.ai,固定家宽
+DOMAIN-SUFFIX,replicate.com,固定家宽
+DOMAIN-SUFFIX,fal.ai,固定家宽
+DOMAIN-SUFFIX,cursor.com,固定家宽
+DOMAIN-SUFFIX,cursor.sh,固定家宽
+DOMAIN-SUFFIX,cursorapi.com,固定家宽
+DOMAIN-SUFFIX,cursor-cdn.com,固定家宽
+DOMAIN-SUFFIX,codeium.com,固定家宽
+DOMAIN-SUFFIX,windsurf.com,固定家宽
+DOMAIN-SUFFIX,devin.ai,固定家宽
+DOMAIN-SUFFIX,replit.com,固定家宽
+DOMAIN-SUFFIX,bolt.new,固定家宽
+DOMAIN-SUFFIX,lovable.dev,固定家宽
+DOMAIN-SUFFIX,v0.dev,固定家宽
 # 图像 / 视频 / 音频 AI
-DOMAIN-SUFFIX,midjourney.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,runwayml.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,suno.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,elevenlabs.io,Taiwan A1 ISP
-DOMAIN-SUFFIX,ideogram.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,leonardo.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,krea.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,stability.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,dreamstudio.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,luma.ai,Taiwan A1 ISP
-DOMAIN-SUFFIX,pika.art,Taiwan A1 ISP
-DOMAIN-SUFFIX,heygen.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,midjourney.com,固定家宽
+DOMAIN-SUFFIX,runwayml.com,固定家宽
+DOMAIN-SUFFIX,suno.com,固定家宽
+DOMAIN-SUFFIX,elevenlabs.io,固定家宽
+DOMAIN-SUFFIX,ideogram.ai,固定家宽
+DOMAIN-SUFFIX,leonardo.ai,固定家宽
+DOMAIN-SUFFIX,krea.ai,固定家宽
+DOMAIN-SUFFIX,stability.ai,固定家宽
+DOMAIN-SUFFIX,dreamstudio.ai,固定家宽
+DOMAIN-SUFFIX,luma.ai,固定家宽
+DOMAIN-SUFFIX,pika.art,固定家宽
+DOMAIN-SUFFIX,heygen.com,固定家宽
 # 共享验证 / 身份核验。它们也服务于非 AI 网站。
-DOMAIN-SUFFIX,withpersona.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,arkoselabs.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,hcaptcha.com,Taiwan A1 ISP
-DOMAIN,challenges.cloudflare.com,Taiwan A1 ISP
-DOMAIN,cdn.workos.com,Taiwan A1 ISP
-DOMAIN,forwarder.workos.com,Taiwan A1 ISP
-DOMAIN,frontend-apps-multi-region.workos.com,Taiwan A1 ISP
-DOMAIN,setup.workos.com,Taiwan A1 ISP
-DOMAIN,images.workoscdn.com,Taiwan A1 ISP
-DOMAIN,workos.imgix.net,Taiwan A1 ISP
-DOMAIN,js.stripe.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,withpersona.com,固定家宽
+DOMAIN-SUFFIX,arkoselabs.com,固定家宽
+DOMAIN-SUFFIX,hcaptcha.com,固定家宽
+DOMAIN,challenges.cloudflare.com,固定家宽
+DOMAIN,cdn.workos.com,固定家宽
+DOMAIN,forwarder.workos.com,固定家宽
+DOMAIN,frontend-apps-multi-region.workos.com,固定家宽
+DOMAIN,setup.workos.com,固定家宽
+DOMAIN,images.workoscdn.com,固定家宽
+DOMAIN,workos.imgix.net,固定家宽
+DOMAIN,js.stripe.com,固定家宽
 # 出口 IP / DNS / WebRTC / 风险检测。这里只控制访问检测站的路由。
-DOMAIN-SUFFIX,webshare.io,Taiwan A1 ISP
-DOMAIN-SUFFIX,net.coffee,Taiwan A1 ISP
-DOMAIN-SUFFIX,ipinfo.io,Taiwan A1 ISP
-DOMAIN-SUFFIX,ipapi.co,Taiwan A1 ISP
-DOMAIN-SUFFIX,ipify.org,Taiwan A1 ISP
-DOMAIN-SUFFIX,ifconfig.me,Taiwan A1 ISP
-DOMAIN-SUFFIX,icanhazip.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,ipleak.net,Taiwan A1 ISP
-DOMAIN-SUFFIX,dnsleaktest.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,browserleaks.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,iphey.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,pixelscan.net,Taiwan A1 ISP
-DOMAIN-SUFFIX,scamalytics.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,ipqualityscore.com,Taiwan A1 ISP
-DOMAIN-SUFFIX,test-ipv6.com,Taiwan A1 ISP
-DOMAIN,www.cloudflare.com,Taiwan A1 ISP
+DOMAIN-SUFFIX,webshare.io,固定家宽
+DOMAIN-SUFFIX,net.coffee,固定家宽
+DOMAIN-SUFFIX,ipinfo.io,固定家宽
+DOMAIN-SUFFIX,ipapi.co,固定家宽
+DOMAIN-SUFFIX,ipify.org,固定家宽
+DOMAIN-SUFFIX,ifconfig.me,固定家宽
+DOMAIN-SUFFIX,icanhazip.com,固定家宽
+DOMAIN-SUFFIX,ipleak.net,固定家宽
+DOMAIN-SUFFIX,dnsleaktest.com,固定家宽
+DOMAIN-SUFFIX,browserleaks.com,固定家宽
+DOMAIN-SUFFIX,iphey.com,固定家宽
+DOMAIN-SUFFIX,pixelscan.net,固定家宽
+DOMAIN-SUFFIX,scamalytics.com,固定家宽
+DOMAIN-SUFFIX,ipqualityscore.com,固定家宽
+DOMAIN-SUFFIX,test-ipv6.com,固定家宽
+DOMAIN,www.cloudflare.com,固定家宽
