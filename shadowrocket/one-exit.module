@@ -1,6 +1,13 @@
 #!name=AI Exit - 固定家宽
 #!desc=常用海外 AI、验证服务与出口检测走 固定家宽；节点备注必须完全一致。
 [Rule]
+# 节点小宝服务直连，覆盖所有子域名
+DOMAIN-SUFFIX,iepose.com,DIRECT
+DOMAIN-SUFFIX,ionewu.com,DIRECT
+# NAS 设备别名直连
+DOMAIN,synology.link,DIRECT
+DOMAIN,kwrt.link,DIRECT
+DOMAIN,openwrt.link,DIRECT
 # Claude / Anthropic
 DOMAIN-SUFFIX,claude.ai,固定家宽
 DOMAIN-SUFFIX,claude.com,固定家宽
