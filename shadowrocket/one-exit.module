@@ -9,6 +9,7 @@ DOMAIN,synology.link,DIRECT
 DOMAIN,kwrt.link,DIRECT
 DOMAIN,openwrt.link,DIRECT
 DOMAIN,19930527.xyz,DIRECT
+DOMAIN,59.110.17.201,DIRECT
 DOMAIN-SUFFIX,binance.com,固定家宽
 # Claude / Anthropic
 DOMAIN-SUFFIX,claude.ai,固定家宽
